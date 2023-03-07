@@ -1,0 +1,19 @@
+[req]
+default_bits = 4096
+default_md = sha256
+distinguished_name = req_distinguished_name
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = Kazakhstan
+ST = Almaty
+L = Almaty
+O = TestCompany
+OU = TestDivision
+CN = http://77.240.39.72/
+[v3_req]
+keyUsage = keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+[alt_names]
+IP.1 = http://77.240.39.72/
